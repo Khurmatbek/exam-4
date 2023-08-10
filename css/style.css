@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Courier New", Courier, monospace;
+    background-color: #000000;
+    padding: 0px;
+    background: url("https://i.pinimg.com/736x/e4/11/ad/e411adee47f1b87fedcbfd64fb434764.jpg");
+}
+.container {
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+/*    movies wrapper part */
+.movies__wrapper {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*   movies form part */
+.movies__form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:25px;
+    margin-bottom: 30px;
+    padding: 20px 15px;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+/*   movies form hover */
+.movies__form:hover {
+    border-color: rgb(255, 255, 255);
+}
+.movies__search {
+    min-width: 220px;
+    max-width: 320px;
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid rgb(198, 133, 3);
+    outline: none;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    list-style-type: circle;
+    transition: border 0.6s ease;
+    /* opacity: 0.6; */
+}
+.movies__search::placeholder {
+    color: green;
+    font-weight: 500;
+}
+.movies__search:active {
+    background-color: black;
+}
+.movies__search:hover {
+    border: 2px solid white;
+    background-color: black;
+}
+/*   movis numnber  */
+.movies__number {
+    min-width: 220px;
+    max-width: 320px;
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid  rgb(198, 133, 3);
+    outline: none;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    list-style-type: circle;
+    transition: border 0.6s ease;
+    /* opacity: 0.6; */
+}
+.movies__number::placeholder {
+    color: green;
+    font-weight: 500;
+}
+.movies__number:active {
+    background-color: black;
+}
+.movies__number:hover {
+    border: 2px solid white;
+    background-color: black;
+}
+/*   movies btn */
+.movies__btn {
+    padding: 12px 20px;
+    outline: none;
+    border: 2px solid green;
+    background-color: rgba(255, 255, 255, 0.442);
+    border-radius: 30px;
+    border: transparent;
+    color: black;
+    transition: background 0.8s ease-in-out;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.movies__btn:hover {
+    background-color: rgb(1, 0, 4);
+    color: rgb(1, 70, 89);
+}
+/*  movies list  */
+.movies__list {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: start;
+    padding: 0;
+    gap: 15px;
+    list-style: none;
+}
+/*  movies item  */
+.movies__item {
+    min-width: 200px;
+    max-width: 400px;
+    width: 100%;
+    /* padding: 10px; */
+    margin-bottom: 20px;
+    border-top: 1.4px solid rgb(198, 133, 3);
+    border-left:1.4px solid green ;
+    border-right: 1.4px solid rgb(198, 133, 3);
+    border-bottom: 1.4px solid green;
+    border-radius: 20px;
+    background-color: rgba(27, 25, 25, 0.783);
+}
+.movies__img-box {
+    min-width: 200px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+.movies__img {
+    min-width: 220px;
+    max-width: 400px;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    display: block;
+    transition: 1.2s ease;
+}
+.movies__img:hover {
+    transform: scale(1.4);
+    opacity: 0.4;
+}
+.movies__textdiv {
+    width: 100%;
+    padding: 15px;
+}
+.movies__title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: rgb(23, 152, 3) ;
+}
+
+.movies__year {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(198, 133, 3);
+}
+.movies__year::before {
+    width: 30px;
+    height: 30px;
+    margin-right: 18px;
+    display: inline-block;
+    background-image: url("https://cdn-icons-png.flaticon.com/128/10755/10755587.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    content: " ";
+}
+.movies__detalis {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: green;
+    text-align: justify;
+}
+
+.movies__summary {
+    font-weight: 700;
+    color: aqua;
+}
+.movies__rating {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(198, 133, 3);;
+}
+/* */
+.movies__rating::before{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 15px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/5000/5000603.png ");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    content: "";
+}
+.movies__last-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.movies__language {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color:rgb(198, 133, 3);
+}
+.movies__language::before{
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-right: 15px;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/016/314/871/small/language-translation-icon-graphic-language-translation-with-transparent-background-free-png.png");
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    content: "";
+}
+.movies__link-box {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    border: 1.4px solid green;
+    border-radius: 30px;
+    transition: background 0.9s ease;
+}
+.movies__link-box:hover {
+    background-color:green;
+}
+.movies__link-box:hover .movies__link {
+    font-weight: 600;
+    color:rgb(198, 133, 3);
+}
+.movies__link {
+    font-size: 17px;
+    font-weight: 500;
+    display: inline-block;
+    color: green;
+    text-decoration: none;
+}
+.movies__last-box {
+    padding: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
