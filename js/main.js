@@ -6,7 +6,7 @@ const elInputLastNumber = document.querySelector(".js-number-last")
 const elList = document.querySelector(".movies__list");
 const Myfunction = function (element) {
    elList.innerHTML = "";
-   movies.forEach(function (element) {
+   element.forEach(function (element) {
       let Item = document.createElement("li");
       Item.classList.add("movies__item")
       let imgBox = document.createElement("div");
@@ -45,7 +45,7 @@ const Myfunction = function (element) {
       textdiv.append(title, year, datalis);
       movieslinkbox.appendChild(movieslink);
       elList.appendChild(Item);
-      image.setAttribute("src", `http://i3.ytimg.com/vi/${element.ytid}/hqdefault.jpg`)
+      image.setAttribute("src", `http://i3.ytimg.com/vi/${element.ytid}/hqdefault.jpg`);
       image.setAttribute("width", "220", "heigh", "400")
       title.textContent = `${element.Title}`;
       year.textContent = `${element.movie_year}`
