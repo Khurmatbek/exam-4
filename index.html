@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,72 @@
 </head>
 
 <body>
-    <main class="site-main">
+
+    <header class="site-header header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__top">
+                    <a class="header__logolink" href="#">
+                        <img class="header__img"
+                            src="https://1.bp.blogspot.com/-gmysmb1TfwA/YRZYwzcER4I/AAAAAAAAMwo/WLB8D7hWmzQT_D9voYmrLW1kyeVd6vRQACLcBGAsYHQ/s499/HDMOVIES-removebg-preview.png"
+                            width="200" height="80" alt="site logo image">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a class="header__link" href="#">Inicio</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#">Peliculas</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#">Series</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link" href="#">Anime</a>
+                            </li>
+                        </ul>
+                        <ul class="header__second-list">
+                            <li class="header__second-item">
+                                <a class="header__icon-link" href="#">
+                                    <img class="header__icon"
+                                        src="https://www.iconpacks.net/icons/2/free-search-icon-2911-thumb.png"
+                                        width="40" height="40" alt="search icon image">
+                                </a>
+                            </li>
+                            <li class="header__second-item">
+                                <a class="header__icon-link" href="#">
+                                    <img class="header__icon" src="./icons/notification.png" width="40" height="40"
+                                        alt="notification icon">
+                                </a>
+                            </li>
+                            <li class="header__second-item">
+                                <a class="header__icon-link" href="#">
+                                    <img class="header__icon" src="./icons/users.png" width="40" height="40"
+                                        alt="users icon  part">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__bottom">
+                    <h1 class="header__nam">
+                        All movies are here
+                    </h1>
+                    <a href="#id" class="header__after-link">
+                        <img class="header__after" src="./icons/down.png" width="130" height="130" alt="down image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="site-main"  id="id">
         <section class="site-movies movies">
             <div class="container">
                 <div class="movies__wrapper wrapper">
+                    <h2 class="visually-hidden">
+                        Assalomu aleykum
+                    </h2>
                     <form class="movies__form  js-form">
                         <input class="movies__search js-search" type="search" placeholder="Search name ..."
                             aria-label="Search... movies name">
@@ -25,48 +88,36 @@
                             Search
                         </button>
                     </form>
-
+                   
                     <ul class="movies__list">
 
-                        <div class="movies__img-box">
-                            <img class="movies__img" src="" width="300" height="200" alt="movie image">
-                        </div>
-                        <h3 class="movies__title">
-                            Patton Oswalt: Annihilation
-                        </h3>
-                        <p class="movies__year">
-                            2017
-                        </p>
-                        <details class="movies__detalis">
-                            <p class="movies__detalis-text" Patton Oswald, despite a personal tragedy, produces his best
-                                standup yet. Focusing on the tribulations of the Trump era and life after the loss of a
-                                loved one, Patton Oswald continues his journey to contribute joy to the world </p>
-                                <summary class="movies__summary">
-                                    Summary
-                                </summary>
-                        </details>
-                        <div class="movies__last-box">
-                            <span class="movies__rating">
-                                7.4
-                            </span>
-                            <span class="movies__language">
-                                English
-                            </span>
-                        </div>
-                        <div class="movies__link-box">
-                            <a class="movies__link">
-                                Movies more..
-                            </a>
-                        </div>
-
-                        </li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
-    <!--  movies 4 th exam  -->
-    Ï
+
+
+    Í<!--   footer started  -->
+    <footer class="site-footer">
+        <div class="container">
+          <div class="site-footer__wrapper">
+            <a class="logo" href="#">
+              <img class="logo__img" src="https://1.bp.blogspot.com/-gmysmb1TfwA/YRZYwzcER4I/AAAAAAAAMwo/WLB8D7hWmzQT_D9voYmrLW1kyeVd6vRQACLcBGAsYHQ/s499/HDMOVIES-removebg-preview.png" alt="site logo">
+            </a>
+            
+    
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"></a></li>
+              <li><a class="twitter" href="#"></a></li>
+              <li><a class="dribbble" href="#"></a></li>
+              <li><a class="linkedin" href="#"></a></li>   
+            </ul>
+          </div>
+        </div>
+      </footer>
+    <!--  footer finished -->
+
     <script src="js/serialy.js"></script>
     <script src="js/main.js"></script>
 
