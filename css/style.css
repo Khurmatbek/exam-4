@@ -217,7 +217,7 @@ body {
     flex-wrap: wrap;
     /* flex-direction: column; */
     justify-content: space-between;
-    align-items: stretch;
+    align-items: start;
     padding: 0;
     gap: 15px;
     list-style: none;
