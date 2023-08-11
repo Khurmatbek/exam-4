@@ -334,7 +334,7 @@ body {
     height: 30px;
     display: inline-block;
     margin-right: 15px;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/5000/5000603.png ");
+    background-image: url("../icons/star.png");
     background-size: 30px 30px;
     background-repeat: no-repeat;
     content: "";
