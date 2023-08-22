@@ -29,8 +29,6 @@ const movies = [
 		language: 'English',
 		ytid:'jwD04NsnLLg',
 	},
-	,
-	,
 	{
 		Title: 'And Then I Go',
 		fulltitle: 'And Then I Go (2017)',

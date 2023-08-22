@@ -13,6 +13,7 @@ body {
         url("https://i.pinimg.com/736x/e4/11/ad/e411adee47f1b87fedcbfd64fb434764.jpg");
 }
 
+
 .container {
     max-width: 1380px;
     width: 100%;
@@ -33,6 +34,7 @@ body {
 }
 /*  header part  */
 .site-header {
+
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -55,6 +57,7 @@ body {
 }
 
 .header__top {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,12 +95,30 @@ body {
     text-decoration: none;
 }
 .header__second-list {
+    position: relative;
     display: flex;
+    flex-direction: column;
     padding-left: 0;
     gap: 18px;
     list-style: none;
 }
-
+.header__icon-book {
+    display:none;
+    z-index: 14;
+    position: absolute;
+    width: 280px;
+    background-color: black;
+    color: green;
+    top: calc(50% + 50px);
+    left: calc(50% - 220px);
+    border: 2px solid green;
+    border-radius: 10px;
+}.none {
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    justify-content: center;
+}
 .header__icon-link {
     display: inline-block;
 }
@@ -115,6 +136,11 @@ body {
     -moz-box-shadow: 1px 3px 14px 18px rgba(218, 221, 2, 0.55);
     box-shadow: 1px 3px 14px 18px rgba(218, 221, 2, 0.55);
     animation: scale 2s ease 0.5s infinite;
+}
+.header__icon-desc{
+    color: red;
+    font-size: 20px;
+
 }
 
 /*    movies wrapper part */
@@ -138,6 +164,7 @@ body {
     border: 2px solid green;
     border-radius: 10px;
 }
+
 
 /*   movies form hover */
 .movies__form:hover {
@@ -278,7 +305,6 @@ body {
     top: calc(50% - 50px);
     left: calc(50% - 50px);
 }
-
 .movies__textdiv {
     width: 100%;
     padding: 15px;
@@ -289,7 +315,6 @@ body {
     font-size: 18px;
     color: rgb(23, 152, 3);
 }
-
 .movies__year {
     display: flex;
     align-items: center;
@@ -478,6 +503,18 @@ body {
     height: 50px;
     border: 1px solid transparent;
     border-radius: 50%;
+}
+.bookmarking {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/6924/6924811.png");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    background-color: transparent;
 }
 
 .facebook {
@@ -713,4 +750,18 @@ body {
         width: 180px;
         height: 80px;
     }
+}
+.error{
+    display: none;
+}
+.delete{
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/6932/6932392.png");
+    background-size: cover;
+    background-position: center;
+    border: none;
+    background-color: transparent;
 }
